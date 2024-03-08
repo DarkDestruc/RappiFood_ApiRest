@@ -30,7 +30,7 @@ namespace RappiFood_ApiRest.Controllers
             _context.MenuRappiFoods.Add(menuItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetMenuItem", new { id = menuItem.IdFood }, menuItem);
+            return CreatedAtAction("GetMenuItem", new { id = menuItem.Id}, menuItem);
         }
     }
 }
